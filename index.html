@@ -1,0 +1,1439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowDaily Collagen Drink Launch</title>
+    <meta name="description" content="Pre-launch landing page for GlowDaily Collagen Drink featuring launch countdown, benefits, usage steps, pricing, and waitlist." />
+    <meta property="og:title" content="GlowDaily Collagen Drink Launch" />
+    <meta property="og:description" content="Pre-launch landing page for GlowDaily Collagen Drink featuring launch countdown, benefits, usage steps, pricing, and waitlist." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --peach-50: #FFF9F6;
+        --peach-100: #FEEFE8;
+        --peach-200: #FBDDD0;
+        --peach-300: #F8C3B0;
+        --peach-400: #F29A7D;
+        --peach-500: #E66A48;
+        --peach-600: #CE4F2C;
+        --peach-900: #4A1A0F;
+        --cream-bg: #FCF9F6;
+        --white: #FFFFFF;
+        --text-dark: #2B211E;
+        --text-body: #61524E;
+        --text-muted: #8E7D78;
+        --border-soft: rgba(230, 106, 72, 0.16);
+        --shadow-soft: 0 10px 30px -10px rgba(230, 106, 72, 0.12);
+        --shadow-elevated: 0 20px 40px -15px rgba(206, 79, 44, 0.16);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: var(--cream-bg);
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .font-serif {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+      }
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+      
+      /* Navigation Bar */
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(12px);
+        background: rgba(252, 249, 246, 0.88);
+        border-bottom: 1px solid var(--border-soft);
+        transition: all 0.3s ease;
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4.25rem;
+      }
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: var(--text-dark);
+      }
+      .brand-dot {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(135deg, var(--peach-400), var(--peach-600));
+        border-radius: 50%;
+      }
+      .brand-text {
+        font-size: 1.35rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .brand-sub {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--peach-500);
+        margin-left: 0.25rem;
+        font-weight: 600;
+      }
+      .nav-btn {
+        background: var(--text-dark);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.875rem;
+        padding: 0.6rem 1.25rem;
+        border-radius: 9999px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+      .nav-btn:hover {
+        background: var(--peach-600);
+        transform: translateY(-1px);
+      }
+
+      /* Buttons & Chips */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background: linear-gradient(135deg, var(--peach-500) 0%, var(--peach-600) 100%);
+        color: var(--white);
+        font-weight: 600;
+        padding: 0.95rem 2rem;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 8px 24px -4px rgba(230, 106, 72, 0.35);
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px -4px rgba(230, 106, 72, 0.45);
+      }
+      .badge-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        background: var(--peach-100);
+        color: var(--peach-600);
+        padding: 0.35rem 0.9rem;
+        border-radius: 9999px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border: 1px solid var(--peach-200);
+      }
+
+      /* Hero Section */
+      .hero-section {
+        padding: 3.5rem 0 5rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-bg-glow {
+        position: absolute;
+        top: -150px;
+        right: -100px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(254, 222, 209, 0.6) 0%, rgba(252, 249, 246, 0) 70%);
+        z-index: -1;
+        pointer-events: none;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        align-items: center;
+      }
+      @media (min-width: 900px) {
+        .hero-grid {
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 4rem;
+        }
+      }
+      .hero-title {
+        font-size: 2.75rem;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin: 1.25rem 0 1rem;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 3.75rem;
+        }
+      }
+      .hero-tagline {
+        font-size: 1.125rem;
+        color: var(--text-body);
+        margin-bottom: 2rem;
+        max-width: 540px;
+      }
+      .countdown-wrapper {
+        background: var(--white);
+        border: 1px solid var(--peach-200);
+        border-radius: 1.25rem;
+        padding: 1.5rem;
+        box-shadow: var(--shadow-soft);
+        margin-bottom: 2rem;
+        max-width: 480px;
+      }
+      .countdown-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+      .countdown-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--peach-600);
+      }
+      .countdown-pulse {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #22C55E;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.15); }
+      }
+      .countdown-timer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+        text-align: center;
+      }
+      .countdown-unit {
+        background: var(--peach-50);
+        border: 1px solid rgba(248, 195, 176, 0.4);
+        border-radius: 0.75rem;
+        padding: 0.75rem 0.25rem;
+      }
+      .countdown-num {
+        display: block;
+        font-size: 1.85rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        line-height: 1.1;
+      }
+      .countdown-lbl {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        letter-spacing: 0.05em;
+        font-weight: 600;
+      }
+      .hero-image-box {
+        position: relative;
+        border-radius: 2rem;
+        overflow: hidden;
+        background: var(--peach-100);
+        border: 1px solid var(--peach-200);
+        box-shadow: var(--shadow-elevated);
+      }
+      .hero-image-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.6s ease;
+      }
+      .hero-image-box:hover img {
+        transform: scale(1.02);
+      }
+      .hero-floating-pill {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(8px);
+        padding: 0.75rem 1.15rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
+
+      /* Section Common */
+      section {
+        padding: 5.5rem 0;
+      }
+      .section-badge {
+        text-align: center;
+        margin-bottom: 0.75rem;
+      }
+      .section-title {
+        font-size: 2.25rem;
+        text-align: center;
+        color: var(--text-dark);
+        margin-bottom: 0.75rem;
+        letter-spacing: -0.02em;
+      }
+      @media (min-width: 768px) {
+        .section-title {
+          font-size: 2.85rem;
+        }
+      }
+      .section-subtitle {
+        text-align: center;
+        color: var(--text-body);
+        max-width: 600px;
+        margin: 0 auto 3.5rem;
+        font-size: 1.05rem;
+      }
+
+      /* 2. Benefits */
+      .benefits-section {
+        background: var(--white);
+        border-top: 1px solid var(--peach-100);
+        border-bottom: 1px solid var(--peach-100);
+      }
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      @media (min-width: 768px) {
+        .benefits-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .benefit-card {
+        background: var(--cream-bg);
+        border: 1px solid var(--peach-100);
+        border-radius: 1.5rem;
+        padding: 2.25rem 1.75rem;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      .benefit-card:hover {
+        transform: translateY(-4px);
+        border-color: var(--peach-300);
+        box-shadow: var(--shadow-soft);
+      }
+      .benefit-icon-wrap {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 1rem;
+        background: var(--peach-100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: var(--peach-600);
+      }
+      .benefit-title {
+        font-size: 1.35rem;
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+        color: var(--text-dark);
+      }
+      .benefit-desc {
+        color: var(--text-body);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      /* 3. How to Use */
+      .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .steps-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .step-card {
+        background: var(--white);
+        border: 1px solid var(--peach-200);
+        border-radius: 1.5rem;
+        padding: 2.25rem 1.75rem;
+        position: relative;
+        box-shadow: var(--shadow-soft);
+      }
+      .step-num {
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        color: var(--peach-400);
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+      .step-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 0.75rem;
+      }
+      .step-desc {
+        color: var(--text-body);
+        font-size: 0.95rem;
+      }
+
+      /* 4. Price Table */
+      .pricing-section {
+        background: var(--peach-50);
+      }
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: stretch;
+      }
+      @media (min-width: 900px) {
+        .pricing-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .pricing-card {
+        background: var(--white);
+        border: 1px solid var(--peach-200);
+        border-radius: 1.75rem;
+        padding: 2.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      .pricing-card.best-value {
+        border: 2px solid var(--peach-500);
+        box-shadow: var(--shadow-elevated);
+        background: linear-gradient(180deg, #FFFFFF 0%, #FFF8F5 100%);
+      }
+      @media (min-width: 900px) {
+        .pricing-card.best-value {
+          transform: scale(1.04);
+          z-index: 2;
+        }
+      }
+      .pricing-badge-top {
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--peach-600);
+        color: var(--white);
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .plan-name {
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+      }
+      .plan-sub {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+        min-height: 2.6rem;
+      }
+      .plan-price-wrap {
+        display: flex;
+        align-items: baseline;
+        gap: 0.25rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--peach-100);
+      }
+      .currency {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--peach-600);
+      }
+      .amount {
+        font-size: 3.25rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        line-height: 1;
+      }
+      .period {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+      .plan-features {
+        list-style: none;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+      }
+      .plan-features li {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        font-size: 0.925rem;
+        color: var(--text-body);
+        margin-bottom: 0.75rem;
+      }
+      .plan-features svg {
+        color: var(--peach-500);
+        flex-shrink: 0;
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: transparent;
+        border: 1.5px solid var(--peach-300);
+        color: var(--text-dark);
+        font-weight: 600;
+        padding: 0.85rem 1.5rem;
+        border-radius: 9999px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .btn-outline:hover {
+        background: var(--peach-100);
+        border-color: var(--peach-500);
+      }
+      .pricing-card.best-value .btn-outline {
+        background: var(--peach-600);
+        border-color: var(--peach-600);
+        color: var(--white);
+        box-shadow: 0 8px 20px -4px rgba(206, 79, 44, 0.4);
+      }
+      .pricing-card.best-value .btn-outline:hover {
+        background: var(--peach-500);
+      }
+
+      /* 5. Customer Quotes */
+      .quotes-section {
+        background: var(--white);
+      }
+      .quotes-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+      @media (min-width: 768px) {
+        .quotes-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .quote-card {
+        background: var(--cream-bg);
+        border: 1px solid var(--peach-200);
+        border-radius: 1.5rem;
+        padding: 2.25rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .star-row {
+        display: flex;
+        gap: 0.25rem;
+        margin-bottom: 1.25rem;
+        color: #F59E0B;
+      }
+      .quote-text {
+        font-size: 1.05rem;
+        color: var(--text-dark);
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      .quote-author {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .author-avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: var(--peach-200);
+        color: var(--peach-900);
+        font-weight: 700;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .author-name {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: var(--text-dark);
+      }
+      .author-role {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      /* 6. FAQ Accordion */
+      .faq-section {
+        background: var(--cream-bg);
+      }
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .faq-item {
+        background: var(--white);
+        border: 1px solid var(--peach-200);
+        border-radius: 1.25rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        transition: all 0.25s ease;
+      }
+      .faq-button {
+        width: 100%;
+        padding: 1.35rem 1.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        border: none;
+        text-align: left;
+        font-family: inherit;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        cursor: pointer;
+        gap: 1rem;
+      }
+      .faq-button:hover {
+        color: var(--peach-600);
+      }
+      .faq-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--peach-500);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        flex-shrink: 0;
+      }
+      .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+      }
+      .faq-panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+        opacity: 0;
+      }
+      .faq-item.active .faq-panel {
+        opacity: 1;
+      }
+      .faq-content {
+        padding: 0 1.75rem 1.5rem;
+        color: var(--text-body);
+        font-size: 0.975rem;
+        line-height: 1.65;
+      }
+
+      /* 7. Notify Me Form */
+      .notify-section {
+        background: linear-gradient(180deg, var(--peach-50) 0%, #FEECE5 100%);
+        border-top: 1px solid var(--peach-200);
+        padding-bottom: 6rem;
+      }
+      .notify-box {
+        max-width: 620px;
+        margin: 0 auto;
+        background: var(--white);
+        border: 1px solid var(--peach-200);
+        border-radius: 2rem;
+        padding: 3rem 2.25rem;
+        box-shadow: var(--shadow-elevated);
+        text-align: center;
+        position: relative;
+      }
+      .form-group {
+        margin-bottom: 1.25rem;
+        text-align: left;
+      }
+      .form-label {
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+        color: var(--text-dark);
+      }
+      .form-input {
+        width: 100%;
+        padding: 0.9rem 1.25rem;
+        border-radius: 0.85rem;
+        border: 1.5px solid var(--peach-200);
+        font-size: 1rem;
+        font-family: inherit;
+        background: var(--cream-bg);
+        color: var(--text-dark);
+        outline: none;
+        transition: all 0.2s ease;
+      }
+      .form-input:focus {
+        border-color: var(--peach-500);
+        background: var(--white);
+        box-shadow: 0 0 0 4px rgba(230, 106, 72, 0.15);
+      }
+      .error-msg {
+        color: #DC2626;
+        font-size: 0.8rem;
+        margin-top: 0.35rem;
+        display: none;
+      }
+      .thank-you-screen {
+        display: none;
+        animation: fadeIn 0.4s ease;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .success-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: #DCFCE7;
+        color: #16A34A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--text-dark);
+        color: var(--peach-100);
+        padding: 3.5rem 0 2rem;
+        font-size: 0.9rem;
+      }
+      .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .footer-inner {
+          flex-direction: row;
+          justify-content: space-between;
+          text-align: left;
+        }
+      }
+      .footer-copy {
+        color: var(--peach-300);
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">GlowDaily</span>
+          <span class="brand-sub">Collagen</span>
+        </a>
+        <a href="#notify" class="nav-btn">Notify Me</a>
+      </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header id="hero" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div>
+          <span class="badge-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Official Global Launch · 1 January
+          </span>
+          <h1 class="hero-title font-serif">
+            GlowDaily Collagen Drink
+          </h1>
+          <p class="hero-tagline">
+            Radiant, plump, luminous skin from within. Powered by 10,000mg bioavailable marine tri-peptides, Japanese white peach ceramides, and clinical antioxidants.
+          </p>
+
+          <!-- Countdown to 1 January -->
+          <div class="countdown-wrapper">
+            <div class="countdown-header">
+              <span class="countdown-title">Launching 1 January In:</span>
+              <span class="countdown-pulse" title="Live Countdown"></span>
+            </div>
+            <div class="countdown-timer">
+              <div class="countdown-unit">
+                <span id="days" class="countdown-num">00</span>
+                <span class="countdown-lbl">Days</span>
+              </div>
+              <div class="countdown-unit">
+                <span id="hours" class="countdown-num">00</span>
+                <span class="countdown-lbl">Hours</span>
+              </div>
+              <div class="countdown-unit">
+                <span id="minutes" class="countdown-num">00</span>
+                <span class="countdown-lbl">Mins</span>
+              </div>
+              <div class="countdown-unit">
+                <span id="seconds" class="countdown-num">00</span>
+                <span class="countdown-lbl">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#notify" class="btn-primary">
+            <span>Notify me for Early Access</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="hero-image-box">
+          <img src="/glowdaily_product.jpg" alt="GlowDaily Collagen Drink bottle and sachet in soft peach natural morning light" />
+          <div class="hero-floating-pill">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E66A48" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <div>
+              <div style="font-weight:700; font-size:0.85rem; color:var(--text-dark);">94% Absorption Rate</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Micro-tripeptide formula</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Three Benefits, each with a simple icon -->
+    <section id="benefits" class="benefits-section">
+      <div class="container">
+        <div class="section-badge">
+          <span class="badge-chip">Pure Efficacy</span>
+        </div>
+        <h2 class="section-title font-serif">Three Clinical Benefits</h2>
+        <p class="section-subtitle">
+          Engineered to restore cellular elasticity, rebuild skin structure, and ignite an enduring all-day luminosity.
+        </p>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1: Hydration / Dewdrop Icon -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title font-serif">Deep Cellular Hydration</h3>
+            <p class="benefit-desc">
+              Multi-molecular hyaluronic acid and ceramides lock moisture into deep dermal layers, visibly plumping thirsty skin from your very first bottle.
+            </p>
+          </div>
+
+          <!-- Benefit 2: Firmness / Sparkle Glow Icon -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3m0 12v3M3 12h3m12 0h3m-2.93-6.07l-2.12 2.12m-7.88 7.88l-2.12 2.12m0-12.12l2.12 2.12m7.88 7.88l2.12 2.12"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title font-serif">Proven Elasticity & Firmness</h3>
+            <p class="benefit-desc">
+              Hydrolyzed marine tri-peptides stimulate pro-collagen synthesis by 65%, smoothing micro-lines and restoring youthful firmness across face and neck.
+            </p>
+          </div>
+
+          <!-- Benefit 3: Shield / Botanical Shield Icon -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title font-serif">Antioxidant Barrier Shield</h3>
+            <p class="benefit-desc">
+              Infused with Japanese white peach extract and vitamin C to protect cells against environmental UV exposure, pollution, and blue-light oxidants.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. How to Use, in 3 numbered steps -->
+    <section id="how-to-use" class="how-section">
+      <div class="container">
+        <div class="section-badge">
+          <span class="badge-chip">Simple Ritual</span>
+        </div>
+        <h2 class="section-title font-serif">How to Use It</h2>
+        <p class="section-subtitle">
+          Effortless everyday skincare you actually look forward to. Just three seamless steps.
+        </p>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3 class="step-title font-serif">Chill & Shake Gently</h3>
+            <p class="step-desc">
+              Keep your GlowDaily bottle chilled in the refrigerator. Shake gently before twisting open to awaken the active botanical bio-compounds.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3 class="step-title font-serif">Sip Each Morning</h3>
+            <p class="step-desc">
+              Drink directly or blend into cold water on an empty stomach. Savor the crisp, refreshing white peach flavor with zero chalky residue.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3 class="step-title font-serif">Glow Consistently</h3>
+            <p class="step-desc">
+              Notice fresh dewy hydration by Day 14, firmer skin elasticity by Day 30, and renewed youthful radiance with your daily ongoing habit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Price Table -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="section-badge">
+          <span class="badge-chip">Launch Offers</span>
+        </div>
+        <h2 class="section-title font-serif">Choose Your Glow Ritual</h2>
+        <p class="section-subtitle">
+          Pre-order pricing locked in exclusively for early waitlist members launching 1 January.
+        </p>
+
+        <div class="pricing-grid">
+          <!-- Plan 1: Single box 39 -->
+          <div class="pricing-card">
+            <h3 class="plan-name font-serif">Single Box</h3>
+            <p class="plan-sub">Perfect for a 10-day radiance kickstart before an event.</p>
+            <div class="plan-price-wrap">
+              <span class="currency">$</span>
+              <span class="amount">39</span>
+              <span class="period">/ one-time</span>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                10 Daily Collagen Elixirs
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Natural White Peach Essence
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Standard Insulated Shipping
+              </li>
+            </ul>
+            <a href="#notify" class="btn-outline plan-select" data-plan="Single Box ($39)">Reserve Single Box</a>
+          </div>
+
+          <!-- Plan 2: Three boxes 99 (marked Best value) -->
+          <div class="pricing-card best-value">
+            <span class="pricing-badge-top">★ Best Value</span>
+            <h3 class="plan-name font-serif">Three Boxes</h3>
+            <p class="plan-sub">The full 30-day clinical reset. Save $18 instantly.</p>
+            <div class="plan-price-wrap">
+              <span class="currency">$</span>
+              <span class="amount">99</span>
+              <span class="period">/ one-time</span>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                30 Daily Collagen Elixirs (1 Month)
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Free Expedited Cold-Chain Shipping
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Complimentary Rose Quartz Gua Sha
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                VIP 48-Hour Priority Dispatch
+              </li>
+            </ul>
+            <a href="#notify" class="btn-outline plan-select" data-plan="Three Boxes ($99 - Best Value)">Reserve 3 Boxes</a>
+          </div>
+
+          <!-- Plan 3: Monthly subscription 33 -->
+          <div class="pricing-card">
+            <h3 class="plan-name font-serif">Monthly Subscription</h3>
+            <p class="plan-sub">Continuous daily rejuvenation with locked-in lowest pricing.</p>
+            <div class="plan-price-wrap">
+              <span class="currency">$</span>
+              <span class="amount">33</span>
+              <span class="period">/ month</span>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Monthly Auto-Delivery
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Lock in $33/mo Forever (Save 15%)
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Free Shipping on Every Order
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Pause, Modify, or Cancel Anytime
+              </li>
+            </ul>
+            <a href="#notify" class="btn-outline plan-select" data-plan="Monthly Subscription ($33/mo)">Join Subscription Waitlist</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Four Customer Quotes with star ratings -->
+    <section id="reviews" class="quotes-section">
+      <div class="container">
+        <div class="section-badge">
+          <span class="badge-chip">Real Experiences</span>
+        </div>
+        <h2 class="section-title font-serif">Early Tester Impressions</h2>
+        <p class="section-subtitle">
+          Over 500 beauty editors and early testers tried our formula before public release.
+        </p>
+
+        <div class="quotes-grid">
+          <!-- Quote 1 -->
+          <div class="quote-card">
+            <div>
+              <div class="star-row" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <p class="quote-text">
+                "After just two weeks of GlowDaily, the tight dry patches around my cheeks completely softened. My makeup artist asked what foundation change I made—it was all this drink!"
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar">SL</div>
+              <div>
+                <div class="author-name">Sophia Laurent</div>
+                <div class="author-role">Beauty Editor & Verified Tester</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote 2 -->
+          <div class="quote-card">
+            <div>
+              <div class="star-row" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <p class="quote-text">
+                "The white peach flavor is truly exquisite. No chalky taste or fishy marine odor at all. It feels like a high-end spa refreshment every morning, and my skin feels bouncy."
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar">EV</div>
+              <div>
+                <div class="author-name">Dr. Elena Vance</div>
+                <div class="author-role">Dermatological Biochemist</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote 3 -->
+          <div class="quote-card">
+            <div>
+              <div class="star-row" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <p class="quote-text">
+                "I was skeptical of ingestible collagen until I saw my fine smile lines soften after bottle 20. Plus my brittle nails haven’t chipped once all month."
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar">CR</div>
+              <div>
+                <div class="author-name">Camille Rousseau</div>
+                <div class="author-role">Skincare Enthusiast, Lyon</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote 4 -->
+          <div class="quote-card">
+            <div>
+              <div class="star-row" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <p class="quote-text">
+                "GlowDaily replaced my entire morning supplement stack. One chilled drink on the way to the studio and my skin looks healthy, calm, and luminous even under heavy lights."
+              </p>
+            </div>
+            <div class="quote-author">
+              <div class="author-avatar">MC</div>
+              <div>
+                <div class="author-name">Marcus Chen</div>
+                <div class="author-role">Creative Director, NYC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ: 4 questions with answers that open and close when clicked -->
+    <section id="faq" class="faq-section">
+      <div class="container faq-container">
+        <div class="section-badge">
+          <span class="badge-chip">Questions & Answers</span>
+        </div>
+        <h2 class="section-title font-serif">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about our formula, shipping, and 1 January launch.
+        </p>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>When will GlowDaily officially ship, and how do pre-orders work?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-content">
+                We officially dispatch on 1 January. Waitlist members get private VIP access 48 hours in advance (starting 30 December) to guarantee stock allocation before global sales open to the public.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>What makes GlowDaily different from standard collagen powders?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-content">
+                Conventional powders contain large peptide chains (3,000–5,000 Daltons) that break down in digestion before reaching the skin. GlowDaily uses bioactive micro-tripeptides under 1,000 Daltons with a 94% cellular absorption rate, infused with Japanese white peach ceramides and vitamin C cofactor.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>What does it taste like, and does it have added sugars?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-content">
+                It features a crisp, natural white peach and botanical nectar flavor that is light, clean, and delicious chilled. It contains zero added sugars, zero artificial sweeteners, zero preservatives, and only 25 calories per serving.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false">
+              <span>How soon can I expect visible skin improvements?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-content">
+                In our blind panel of 500 testers, 91% reported heightened hydration and dewy texture within 10 to 14 days. Pronounced improvements in firmness, elasticity, and smoothing of fine lines are clinically documented after 30 to 60 days of consistent daily consumption.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. A Notify-me form (name and email) that checks the email and shows a thank you message -->
+    <section id="notify" class="notify-section">
+      <div class="container">
+        <div class="notify-box">
+          <!-- Form View -->
+          <div id="notifyFormWrapper">
+            <span class="badge-chip" style="margin-bottom:1rem;">Priority Waitlist</span>
+            <h2 class="section-title font-serif" style="margin-bottom:0.75rem;">Be First to Experience GlowDaily</h2>
+            <p style="color:var(--text-body); margin-bottom:2rem; font-size:1rem;">
+              Join our VIP list today to receive early access 48 hours before the 1 January launch, founder pricing, and a complimentary welcome gift.
+            </p>
+
+            <form id="notifyForm" novalidate>
+              <div class="form-group">
+                <label for="userName" class="form-label">Full Name</label>
+                <input type="text" id="userName" class="form-input" placeholder="e.g. Elena Vance" required />
+                <div id="nameError" class="error-msg">Please enter your name</div>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Email Address</label>
+                <input type="email" id="userEmail" class="form-input" placeholder="e.g. elena@example.com" required />
+                <div id="emailError" class="error-msg">Please enter a valid email address (e.g. name@domain.com)</div>
+              </div>
+
+              <input type="hidden" id="selectedPlan" value="Three Boxes ($99 - Best Value)" />
+
+              <button type="submit" class="btn-primary" style="width:100%; margin-top:0.75rem; padding:1.05rem;">
+                <span>Notify Me on 1 January</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+
+              <p style="font-size:0.78rem; color:var(--text-muted); margin-top:1rem;">
+                🔒 No spam. We only send your private launch code and VIP order invite on 1 January.
+              </p>
+            </form>
+          </div>
+
+          <!-- Thank You Screen -->
+          <div id="thankYouScreen" class="thank-you-screen">
+            <div class="success-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="section-title font-serif" style="margin-bottom:0.75rem;">Thank You, <span id="confirmedName">Friend</span>!</h3>
+            <p style="color:var(--text-body); font-size:1.05rem; margin-bottom:1.5rem;">
+              You are now confirmed for <strong>GlowDaily Early Access</strong>. A private access link will be sent to <strong id="confirmedEmail" style="color:var(--peach-600);">your email</strong> ahead of our <strong>1 January</strong> launch.
+            </p>
+            <div style="background:var(--peach-50); border:1px solid var(--peach-200); border-radius:1rem; padding:1.25rem; margin-bottom:1.75rem; font-size:0.9rem; color:var(--text-dark);">
+              <div>✨ <strong>VIP Pass #GLOW-4829</strong></div>
+              <div style="margin-top:0.25rem; color:var(--text-muted);">Package interest: <span id="confirmedPlan" style="font-weight:600; color:var(--peach-500);">Three Boxes ($99)</span></div>
+            </div>
+            <button id="resetFormBtn" type="button" class="btn-outline" style="max-width:240px; margin:0 auto; font-size:0.85rem;">
+              Register another email
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <div style="font-weight:700; font-size:1.15rem; color:var(--white);">GlowDaily Collagen Drink</div>
+          <div class="footer-copy">Premium bio-cellular beauty elixir · Launching 1 January</div>
+        </div>
+        <div class="footer-copy">
+          © 2026 GlowDaily Labs. All rights reserved. Clean, soft peach & white skincare wellness.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla JavaScript: No Frameworks -->
+    <script>
+      (function() {
+        // 1. Live Countdown to 1 January
+        function updateCountdown() {
+          const now = new Date();
+          let currentYear = now.getFullYear();
+          // Target next 1 January
+          let launchDate = new Date(currentYear, 0, 1, 0, 0, 0);
+          if (now >= launchDate) {
+            launchDate = new Date(currentYear + 1, 0, 1, 0, 0, 0);
+          }
+
+          const diff = launchDate - now;
+
+          if (diff <= 0) {
+            document.getElementById('days').textContent = '00';
+            document.getElementById('hours').textContent = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
+            return;
+          }
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / 1000 / 60) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+
+          document.getElementById('days').textContent = String(days).padStart(2, '0');
+          document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+          document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+          document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // 2. FAQ Accordion: 4 questions that open and close when clicked
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+          const btn = item.querySelector('.faq-button');
+          const panel = item.querySelector('.faq-panel');
+
+          btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all
+            faqItems.forEach(other => {
+              other.classList.remove('active');
+              other.querySelector('.faq-button').setAttribute('aria-expanded', 'false');
+              other.querySelector('.faq-panel').style.maxHeight = null;
+            });
+
+            // If not active before, open this one
+            if (!isActive) {
+              item.classList.add('active');
+              btn.setAttribute('aria-expanded', 'true');
+              panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+          });
+        });
+
+        // 3. Pricing Plan Selection linking to Form
+        const planButtons = document.querySelectorAll('.plan-select');
+        const planInput = document.getElementById('selectedPlan');
+        planButtons.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const plan = btn.getAttribute('data-plan');
+            if (plan && planInput) {
+              planInput.value = plan;
+            }
+          });
+        });
+
+        // 4. Notify-me Form with email check and thank you screen
+        const form = document.getElementById('notifyForm');
+        const nameInput = document.getElementById('userName');
+        const emailInput = document.getElementById('userEmail');
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const formWrapper = document.getElementById('notifyFormWrapper');
+        const thankYouScreen = document.getElementById('thankYouScreen');
+        const confirmedName = document.getElementById('confirmedName');
+        const confirmedEmail = document.getElementById('confirmedEmail');
+        const confirmedPlan = document.getElementById('confirmedPlan');
+        const resetBtn = document.getElementById('resetFormBtn');
+
+        function isValidEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+          return re.test(String(email).toLowerCase());
+        }
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          let valid = true;
+
+          // Check name
+          const nameVal = nameInput.value.trim();
+          if (!nameVal) {
+            nameError.style.display = 'block';
+            nameInput.style.borderColor = '#DC2626';
+            valid = false;
+          } else {
+            nameError.style.display = 'none';
+            nameInput.style.borderColor = 'var(--peach-200)';
+          }
+
+          // Check email
+          const emailVal = emailInput.value.trim();
+          if (!emailVal || !isValidEmail(emailVal)) {
+            emailError.style.display = 'block';
+            emailInput.style.borderColor = '#DC2626';
+            valid = false;
+          } else {
+            emailError.style.display = 'none';
+            emailInput.style.borderColor = 'var(--peach-200)';
+          }
+
+          if (valid) {
+            confirmedName.textContent = nameVal;
+            confirmedEmail.textContent = emailVal;
+            confirmedPlan.textContent = planInput.value || 'Three Boxes ($99 - Best Value)';
+
+            formWrapper.style.display = 'none';
+            thankYouScreen.style.display = 'block';
+
+            // Save to localStorage for demo persistence
+            try {
+              localStorage.setItem('glowdaily_waitlist', JSON.stringify({
+                name: nameVal,
+                email: emailVal,
+                plan: planInput.value,
+                date: new Date().toISOString()
+              }));
+            } catch(e) {}
+          }
+        });
+
+        // Real-time input error clearing
+        nameInput.addEventListener('input', () => {
+          if (nameInput.value.trim()) {
+            nameError.style.display = 'none';
+            nameInput.style.borderColor = 'var(--peach-200)';
+          }
+        });
+        emailInput.addEventListener('input', () => {
+          if (isValidEmail(emailInput.value.trim())) {
+            emailError.style.display = 'none';
+            emailInput.style.borderColor = 'var(--peach-200)';
+          }
+        });
+
+        // Reset form to register another
+        resetBtn.addEventListener('click', () => {
+          form.reset();
+          thankYouScreen.style.display = 'none';
+          formWrapper.style.display = 'block';
+        });
+      })();
+    </script>
+  </body>
+</html>

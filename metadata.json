@@ -1,0 +1,6 @@
+{
+  "name": "GlowDaily Collagen Drink Launch",
+  "description": "Premium one-page launch website for GlowDaily Collagen Drink featuring countdown to 1 January, benefits, usage guide, pricing, reviews, interactive FAQ, and VIP waitlist notification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
